@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XZEN TOPUP</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0b1020;
+color:white;
+overflow-x:hidden;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.4);
+backdrop-filter:blur(10px);
+z-index:999;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+background:linear-gradient(90deg,#8b5cf6,#38bdf8);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+}
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url('https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1600');
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#ccc;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 30px;
+background:linear-gradient(90deg,#8b5cf6,#38bdf8);
+border-radius:10px;
+text-decoration:none;
+color:white;
+}
+
+.section{
+padding:80px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
+}
+
+.games{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.card{
+background:#131b34;
+border-radius:20px;
+overflow:hidden;
+transition:.3s;
+cursor:pointer;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 30px rgba(139,92,246,.5);
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.card h3{
+padding:15px;
+text-align:center;
+}
+
+.packages{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.package{
+background:#131b34;
+padding:25px;
+border-radius:20px;
+text-align:center;
+}
+
+.package h2{
+margin-bottom:10px;
+}
+
+.price{
+font-size:28px;
+color:#38bdf8;
+margin:15px 0;
+}
+
+.buy{
+background:#8b5cf6;
+padding:10px 25px;
+border:none;
+border-radius:10px;
+color:white;
+cursor:pointer;
+}
+
+.payment{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.box{
+background:#131b34;
+padding:25px;
+border-radius:20px;
+text-align:center;
+}
+
+.telegram-btn{
+display:inline-block;
+margin-top:15px;
+background:#229ED9;
+padding:12px 25px;
+border-radius:10px;
+color:white;
+text-decoration:none;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#070b16;
+margin-top:50px;
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:40px;
+}
+}
+.card{
+background:#131b34;
+border-radius:20px;
+overflow:hidden;
+transition:.3s;
+cursor:pointer;
+text-decoration:none;
+color:white;
+display:block;
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">XZEN TOPUP</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Games</a>
+<a href="#">Topup</a>
+<a href="#">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h1>TOP UP GAME FAST & SAFE</h1>
+<p>Free Fire • PUBG Mobile • MLBB • Roblox • Valorant</p>
+<a href="#games" class="btn">Top Up Now</a>
+</div>
+</section>
+
+<section class="section" id="games">
+<h2 class="section-title">Popular Games</h2>
+
+<div class="games">
+
+<div class="card">
+<a href="freefire.html" class="card">
+<img src="https://www.apkmirror.com/wp-content/themes/APKMirror/ap_resize/ap_resize.php?src=https%3A%2F%2Fdownloadr2.apkmirror.com%2Fwp-content%2Fuploads%2F2024%2F04%2F86%2F661f50cd035c1_com.dts.freefiremax.png&w=384&h=384&q=100">
+<h3>Free Fire</h3>
+</a>
+</div>
+
+<div class="card">
+<img src="https://cdn-www.bluestacks.com/bs-images/featured_com.tencent.ig.jpg">
+<h3>PUBG Mobile</h3>
+</div>
+
+<div class="card">
+<img src="https://cdn.aptoide.com/imgs/c/5/1/c51479a765a17b8f9a9aade1359a4a27_icon.png">
+<h3>Mobile Legends</h3>
+</div>
+
+<div class="card">
+<img src="https://bullfincher.io/company_logos_external/RBLX.jpeg">
+<h3>Roblox</h3>
+</div>
+</section>
+
+</div>
+
+<section class="section">
+<h2 class="section-title">Payment & Support</h2>
+
+<div class="payment">
+
+<div class="box">
+<h3>ABA Payment</h3>
+<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/KHQR_Logo.png" width="200">
+<p>Replace with your ABA QR</p>
+</div>
+
+<div class="box">
+<h3>Telegram Support</h3>
+<p>24/7 Customer Service</p>
+
+<a class="telegram-btn"
+href="https://t.me/YOURUSERNAME">
+Order via Telegram
+</a>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 XZEN TOPUP | All Rights Reserved
+</footer>
+
+</body>
+</html>
